@@ -1,0 +1,41 @@
+.header
+  padding: 45px 0
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+.wrap
+
+  &__link
+    display: flex
+    align-items: center
+
+  &__img
+    width: 160px
+    height: auto
+
+.container
+  max-width: 1350px
+
+.nav
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__item
+    display: inline-block
+    margin-right: 40px
+    &:last-child
+      margin: 0
+
+  &__link
+    text-decoration: none
+    color: $white
+    transition: color .3s
+    &:hover
+      color: $blue-chill
