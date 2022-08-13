@@ -24,6 +24,7 @@
     padding: 40px
     padding-right: 60px
     display: flex
+    align-items: center
     background: $black
     border-radius: 32px
     &:last-child
@@ -47,15 +48,12 @@
     color: $white
     background-color: $cod-gray
     border-radius: 6px
+    border: 1px solid transparent
     text-decoration: none
+    transition: all .4s
     &:hover
       border: 1px solid $blue-chill
       border-radius: 6px
-      max-width: 140px
-    &:hover .descr-a
-      display: none
-    &:hover .descr-b
-      display: inherit
 
   &__episode
     margin-bottom: 20px
@@ -63,6 +61,7 @@
     text-decoration: none
     color: $blue-chill
     position: relative
+    transition: opacity .4s
     &::after
       content: ""
       width: 24px
@@ -90,6 +89,15 @@
 
   &__intelligence
     max-width: 210px
+    border: 2px solid transparent
+    transition: all .4s
+    &:hover
+      background-color: transparent
+      border: 2px solid $blue-chill
+      border-radius: 6px
+
+  &__link--wide
+    max-width: 140px
 
 .descr-b
   display: none

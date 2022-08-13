@@ -175,13 +175,13 @@ body {
   display: inline-block;
   line-height: 0;
   margin-right: 15px;
+  transition: transform 0.4s;
 }
 .hero__link:last-child {
   margin: 0;
 }
-
-.container--less {
-  max-width: 1265px;
+.hero__link:hover {
+  transform: scale(1.1);
 }
 
 .episodes {
@@ -209,6 +209,7 @@ body {
   padding: 40px;
   padding-right: 60px;
   display: flex;
+  align-items: center;
   background: #000000;
   border-radius: 32px;
 }
@@ -233,18 +234,13 @@ body {
   color: #FFFFFF;
   background-color: #191919;
   border-radius: 6px;
+  border: 1px solid transparent;
   text-decoration: none;
+  transition: all 0.4s;
 }
 .cards__link:hover {
   border: 1px solid #118DA8;
   border-radius: 6px;
-  max-width: 140px;
-}
-.cards__link:hover .descr-a {
-  display: none;
-}
-.cards__link:hover .descr-b {
-  display: inherit;
 }
 .cards__episode {
   margin-bottom: 20px;
@@ -252,6 +248,7 @@ body {
   text-decoration: none;
   color: #118DA8;
   position: relative;
+  transition: opacity 0.4s;
 }
 .cards__episode::after {
   content: "";
@@ -281,6 +278,16 @@ body {
 }
 .cards__intelligence {
   max-width: 210px;
+  border: 2px solid transparent;
+  transition: all 0.4s;
+}
+.cards__intelligence:hover {
+  background-color: transparent;
+  border: 2px solid #118DA8;
+  border-radius: 6px;
+}
+.cards__link--wide {
+  max-width: 140px;
 }
 
 .descr-b {
