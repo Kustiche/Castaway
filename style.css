@@ -34,8 +34,21 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1265px;
+  max-width: 1330px;
   padding: 0 15px;
+}
+
+.link {
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #118DA8;
+  border-radius: 6px;
+  color: #FFFFFF;
+  transition: background-color 0.4s;
+}
+.link:hover {
+  background-color: #14687B;
 }
 
 .header {
@@ -162,4 +175,114 @@ body {
   display: inline-block;
   line-height: 0;
   margin-right: 15px;
+}
+.hero__link:last-child {
+  margin: 0;
+}
+
+.container--less {
+  max-width: 1265px;
+}
+
+.episodes {
+  padding-top: 95px;
+  padding-bottom: 130px;
+}
+.episodes__inner {
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.episodes__title {
+  margin: 0;
+  font-size: 64px;
+  line-height: 79px;
+  letter-spacing: 2.88px;
+}
+.episodes__inner-link {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cards__card {
+  margin-bottom: 60px;
+  padding: 40px;
+  padding-right: 60px;
+  display: flex;
+  background: #000000;
+  border-radius: 32px;
+}
+.cards__card:last-child {
+  margin-bottom: 0;
+}
+.cards__image {
+  margin-right: 55px;
+  width: 389px;
+  height: auto;
+}
+.cards__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 755px;
+}
+.cards__link {
+  margin-bottom: 50px;
+  padding: 0 15px;
+  max-width: 75px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #191919;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.cards__link:hover {
+  border: 1px solid #118DA8;
+  border-radius: 6px;
+  max-width: 140px;
+}
+.cards__link:hover .descr-a {
+  display: none;
+}
+.cards__link:hover .descr-b {
+  display: inherit;
+}
+.cards__episode {
+  margin-bottom: 20px;
+  max-width: 85px;
+  text-decoration: none;
+  color: #118DA8;
+  position: relative;
+}
+.cards__episode::after {
+  content: "";
+  width: 24px;
+  height: 0;
+  border-top: 1px solid #FFFFFF;
+  top: 0;
+  left: 21px;
+  position: absolute;
+}
+.cards__episode:hover {
+  opacity: 90%;
+}
+.cards__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: 2.56px;
+}
+.cards__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.cards__intelligence {
+  max-width: 210px;
+}
+
+.descr-b {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
