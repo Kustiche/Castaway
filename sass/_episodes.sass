@@ -6,6 +6,7 @@
     margin-bottom: 65px
     display: flex
     justify-content: space-between
+    animation: fadeInDown 1s
 
   &__title
     margin: 0
@@ -29,6 +30,10 @@
     border-radius: 32px
     &:last-child
       margin-bottom: 0
+    &:nth-child(even)
+      animation: fadeInLeftBig 1s
+    &:nth-child(odd)
+      animation: fadeInRightBig 1s
 
   &__image
     margin-right: 55px
